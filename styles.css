@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  letter-spacing: 0.2px;
 }
 
 body {
@@ -86,7 +87,7 @@ h2 {
 .info label {
   /* display: block; */
   height: 1.5rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 700;
   color: #1b1b32;
   margin-bottom: 2px;
@@ -114,8 +115,22 @@ h2 {
 
 /* SECTION 2 OF THE MAIN */
 
+.question-block {
+  font-size: 1.2rem;
+}
+
+.question-block p {
+  color: #17173f;
+  font-weight: 700;
+}
+
 .question-block p:before {
   content: "Question #";
+}
+
+.question legend {
+  color: #293350;
+  font-size: 1.1rem;
 }
 
 .question {
@@ -132,4 +147,42 @@ h2 {
 
 .answers-list label {
   font-weight: unset;
+}
+
+/* Section 3 of the main  */
+
+.formrow .question-block {
+  margin: 0.5rem 0;
+}
+
+.formrow select {
+  height: 1.5rem;
+  width: 45%;
+}
+
+.formrow textarea {
+  width: 45%;
+  height: 80px;
+}
+
+.info button {
+  width: 25%;
+  height: 2rem;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #1b1b32;
+  color: #dfdfe2;
+  padding: 0.5rem 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.text-center {
+  text-align: center;
 }

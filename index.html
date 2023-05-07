@@ -38,6 +38,7 @@
                 <input type="date" id="student-dob" name="student-dob">
             </div>
         </section>
+
         <section role="region" aria-labelledby="html-questions">
             <h2 id="html-questions">HTML Ques</h2>
             <div class="info question-block">
@@ -55,8 +56,8 @@
             <div class="info question-block">
                 <p>2</p>
                 <fieldset class="question" name="html-question-two">
-                    <legend>A label element nesting an input element is required to have a
-                        for attribute with the same value as the input's id</legend>
+                    <legend>A label element nesting an input element is required to have a for attribute with the same
+                        value as the input's id</legend>
                     <ul class="answers-list">
                         <li><label for="q2-a1"><input type="radio" name="q2-a" value="true" id="q2-a1"> True</label>
                         <li><label for="q2-a2"><input type="radio" name="q2-a" value="true" id="q2-a2"> False</label>
@@ -65,8 +66,41 @@
                 </fieldset>
             </div>
         </section>
+
+        <section role="region" aria-labelledby="css-questions">
+            <h2 id="css-questions">CSS Questions</h2>
+            <div class="info formrow">
+                <div class="question-block">
+                    <label for="customer">Are you a frontend developer?</label>
+                </div>
+                <div class="answer">
+                    <select name="customer" id="customer">
+                        <option value="">Select an option</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+
+                <div class="question-block">
+                    <label for="feedback">Do you have any question?</label>
+                </div>
+                <div class="answer">
+                    <textarea rows="3" cols="30" id="feedback" placeholder="Wnat is Flexbox..."></textarea>
+                </div>
+            </div>
+        </section>
+        <div class="info">
+            <button type="submit" value="send">Send</button>
+        </div>
     </main>
-    <footer></footer>
+    <footer class="info text-center">
+        <address>
+            <a href="https://freecodecamp.org">freeCodeCamp</a> <br>
+            <p>San Francisco</p>
+            <p>California</p>
+            <p>USA</p>
+        </address>
+    </footer>
 </body>
 
 </html>
