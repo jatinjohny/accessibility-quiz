@@ -61,7 +61,7 @@ main {
 }
 
 section {
-  margin-bottom: 2rem;
+  margin-bottom: rem;
 }
 
 h1,
@@ -84,7 +84,7 @@ h2 {
 }
 
 .info label {
-  display: block;
+  /* display: block; */
   height: 1.5rem;
   font-size: 1.2rem;
   font-weight: 700;
@@ -93,7 +93,8 @@ h2 {
 }
 
 .info input {
-  height: 2rem;
+  height: 1.5rem;
+  vertical-align: middle;
 }
 
 .info input[type="date"] {
@@ -109,4 +110,26 @@ h2 {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
+}
+
+/* SECTION 2 OF THE MAIN */
+
+.question-block p:before {
+  content: "Question #";
+}
+
+.question {
+  border: none;
+  padding: 0;
+  margin-top: 0.5rem;
+}
+
+.answers-list {
+  list-style: none;
+  padding-left: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.answers-list label {
+  font-weight: unset;
 }
